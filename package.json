@@ -1,0 +1,26 @@
+{
+  "name": "COTB-2015",
+  "version": "1.0.0",
+  "description": "Code On The Beach 2015 redesign.",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.8.11",
+    "gulp-connect": "^2.2.0",
+    "gulp-ruby-sass": "^1.0.0-alpha.3",
+    "gulp-uglify": "^1.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danmalarkey/cotb-15.git"
+  },
+  "author": "Dan Malarkey, Paul Irwin, Code On The Beach",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danmalarkey/cotb-15/issues"
+  },
+  "homepage": "https://github.com/danmalarkey/cotb-15"
+}

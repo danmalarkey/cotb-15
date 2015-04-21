@@ -1,0 +1,322 @@
+/*------------------------------------*\
+
+    $Helper Classes
+    
+\*------------------------------------*/
+
+/* No border */
+
+.no-b {
+  border-color: transparent;
+  border: none;
+}
+
+
+
+/* Text Utilities */
+
+.hide-text {
+  font: 0/0;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0; 
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justified {
+  text-align: justify;
+}
+
+
+
+/* Float + Positioning Utilities */
+
+.left-float {
+  float: left;
+}
+
+.right-float {
+  float: right;
+}
+
+.center-float {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.no-float {
+  float: none;
+}
+
+
+
+
+/* Is Disabled Utility Class */
+.is-disabled,
+.disabled {
+  pointer-events: none;
+  opacity: .45;
+  cursor: not-allowed;
+}
+
+
+
+
+
+
+.hide-desktop {
+  display: none;
+
+  @include bp(mobile) {
+    display: block;
+    visibility: visible;
+  }
+
+  @include bp(tablet) {
+    display: block;
+    visibility: visible;
+  }
+}
+
+    [class^="col"] {
+      &.hide-desktop {
+        @include bp(mobile) {
+          display: block;
+          visibility: visible;
+        }
+
+        @include bp(tablet) {
+          display: block;
+          visibility: visible;
+        }
+
+        @include bp(desktop) {
+          display: none;
+        }
+      }
+
+      .hide-desktop {
+        @include bp(mobile) {
+          display: block;
+          visibility: visible;
+        }
+
+        @include bp(tablet) {
+          display: block;
+          visibility: visible;
+        }
+
+        @include bp(desktop) {
+          display: none;
+        }
+      }
+    }
+
+
+.hide-tablet {
+  @include bp(tablet) {
+    display: none;
+  }
+  @include bp(desktop) {
+    display: block;
+    visibility: visible;
+  }
+  @include bp(mobile) {
+    display: block;
+    visibility: visible;
+  }
+}
+    [class^="col"] {
+      &.hide-tablet {
+        @include bp(tablet) {
+          display: none;
+        }
+        @include bp(desktop) {
+          display: block;
+          visibility: visible;
+        }
+        @include bp(mobile) {
+          display: block;
+          visibility: visible;
+        }
+      }
+
+      .hide-tablet {
+        @include bp(tablet) {
+          display: none;
+        }
+        @include bp(desktop) {
+          display: block;
+          visibility: visible;
+        }
+        @include bp(mobile) {
+          display: block;
+          visibility: visible;
+        }
+      }
+    }
+
+
+
+.hide-mobile {
+  @include bp(mobile) {
+    visibility: hidden;
+    display: none;
+  }
+  @include bp(tablet) {
+    display: block;
+    visibility: visible;
+  }
+  @include bp(desktop) {
+    display: block;
+    visibility: visible;
+  }
+}
+
+    [class^="col"] {
+      &.hide-mobile {
+        @include bp(mobile) {
+          visibility: hidden;
+          display: none;
+        }
+        @include bp(tablet) {
+          display: block;
+          visibility: visible;
+        }
+        @include bp(desktop) {
+          display: block;
+          visibility: visible;
+        }
+      }
+
+      .hide-mobile {
+        @include bp(mobile) {
+          visibility: hidden;
+          display: none;
+        }
+        @include bp(tablet) {
+          display: block;
+          visibility: visible;
+        }
+        @include bp(desktop) {
+          display: block;
+          visibility: visible;
+        }
+      }
+    }
+
+
+
+
+
+// Show
+
+.show-mobile {
+  @include bp(mobile) {
+    display: block;
+    visibility: visible;
+  }
+}
+
+    [class^="col"] {
+      &.show-mobile {
+        @include bp(mobile) {
+          display: block;
+          visibility: visible;
+        }
+      }
+      .show-mobile {
+        @include bp(mobile) {
+          display: block;
+          visibility: visible;
+        }
+      }
+    }
+
+.show-tablet {
+  @include bp(tablet) {
+    display: block;
+    visibility: visible;
+  }
+}
+
+    [class^="col"] {
+      &.show-tablet {
+        @include bp(tablet) {
+          display: block;
+          visibility: visible;
+        }
+      }
+      .show-tablet {
+        @include bp(tablet) {
+          display: block  ;
+          visibility: visible;
+        }
+      }
+    }
+
+
+
+.show-desktop {
+  @include bp(desktop) {
+    display: block;
+    visibility: visible;
+  }
+}
+
+  [class^="col"] {
+    &.show-desktop {
+      display: block;
+
+      @include bp(desktop) {
+        display: block;
+        visibility: visible;
+      }
+    }
+
+    .show-desktop {
+      display: block;
+
+      @include bp(desktop) {
+        display: block;
+        visibility: visible;
+      }
+    }
+  }
+
+  .hide {
+    visibility: hidden;
+    display: none;
+    opacity: 0;
+    @include transition(opacity .45s linear);
+  }
+
+  .fade {
+    opacity: 0;
+    @include transition(opacity .45s linear);
+  }
+
+  .fade.in {
+    opacity: 1;
+  }
+
+
+.test-visually {
+  .block {
+    background-color: $primary-color;
+    color: $base-white;
+    padding: 1rem;
+  }
+}
