@@ -34,11 +34,13 @@ gulp.task('webserver', function() {
 // Watch Task
 // watches js
 gulp.task('watch', function() {
-    gulp.watch('js/**/*.js', ['scripts']);
-    gulp.watch('scss/**/*.scss', ['styles']);
+    gulp.watch('src/js/**/*.js', ['scripts']);
+    gulp.watch('src/scss/**/*.scss', ['styles']);
+    gulp.watch('src/css/**/*.css', ['styles']);
+    gulp.watch('*.html')
 });
 
 
 
-gulp.task('default', ['scripts', 'styles', 'watch', 'webserver']);
+gulp.task('default', ['styles', 'scripts', 'webserver', 'watch']);
 

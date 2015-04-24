@@ -1,0 +1,25 @@
+.intro-slot {
+    background-image: url("/src/img/sessions.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+    height: 400px;
+    @include background-size(cover);
+}
+
+.slot-title {
+    padding: 3rem;
+    margin-top: 0;
+    color: white;
+    text-transform: uppercase;
+    font-family: $roboto-condensed;
+}
+
+.speaker-slot {
+    background-image: url("/src/img/sessions.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+    height: 400px;
+    @include background-size(cover);
+}

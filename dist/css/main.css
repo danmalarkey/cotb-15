@@ -605,6 +605,24 @@ input[type="radio"], input[type="checkbox"] { margin-top: 1px \9; *margin-top: 0
 /*------------------------------------*\
  $Grid System 
 \*------------------------------------*/
+.g-one-fourth, .g-one-half, .g-one-third, .g-two-third, .g-one-fifth, .g-two-fifth, .g-three-fifth, .g-four-fifth { display: inline-block; float: left; }
+
+.g-one-fifth { width: 20%; }
+
+.g-two-fifth { width: 40%; }
+
+.g-three-fifth { width: 60%; }
+
+.g-four-fifth { width: 80%; }
+
+.g-one-third { width: 33%; }
+
+.g-two-third { width: 67%; }
+
+.g-one-fourth { width: 25%; }
+
+.g-one-half { width: 50%; }
+
 [class^="col"] { float: left; min-height: 1px; margin-left: 20px; margin-left: 1.25rem; }
 @media (max-width: 47.9375rem) { [class^="col"] { float: none; width: 100%; margin-left: 0; } }
 @media (min-width: 75rem) { [class^="col"] { margin-left: 30px; margin-left: 1.875rem; } }
@@ -949,3 +967,9 @@ input[type="radio"], input[type="checkbox"] { margin-top: 1px \9; *margin-top: 0
 .fade.in { opacity: 1; }
 
 .test-visually .block { background-color: #3498db; color: #fff; padding: 1rem; }
+
+.intro-slot { background-image: url("/src/img/sessions.jpg"); background-repeat: no-repeat; background-position: 50% 50%; height: 400px; -moz-background-size: cover; -webkit-background-size: cover; background-size: cover; }
+
+.slot-title { padding: 3rem; margin-top: 0; color: white; text-transform: uppercase; font-family: "Roboto Condensed"; }
+
+.speaker-slot { background-image: url("/src/img/sessions.jpg"); background-repeat: no-repeat; background-position: 50% 50%; height: 400px; -moz-background-size: cover; -webkit-background-size: cover; background-size: cover; }

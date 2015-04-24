@@ -3,7 +3,51 @@
     $Grid System
     
 \*------------------------------------*/
-  
+
+.g-one-fourth,
+.g-one-half,
+.g-one-third,
+.g-two-third,
+.g-one-fifth,
+.g-two-fifth,
+.g-three-fifth,
+.g-four-fifth {
+    display: inline-block;
+    float: left;
+}
+
+.g-one-fifth {
+    width: 20%;
+}
+
+.g-two-fifth {
+    width: 40%;
+}
+
+.g-three-fifth {
+    width: 60%;
+}
+
+.g-four-fifth {
+    width: 80%;
+}
+
+.g-one-third {
+    width: 33%;
+}
+
+.g-two-third {
+    width: 67%;
+}
+
+.g-one-fourth {
+    width: 25%;
+}
+
+.g-one-half {
+    width: 50%;
+}
+
 [class^="col"] { 
   float: left; 
   min-height: 1px; 
