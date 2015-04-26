@@ -6,8 +6,8 @@
 
 body {
   @include rem(padding, 5px);
-  //background-color: $base-white;
-  background-color: $light-sand;
+  background-color: $base-white;
+  //background-color: $light-sand;
   color: $text-color;
   font-family: $primary-font;
   font-weight: $font-family-weight;

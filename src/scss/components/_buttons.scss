@@ -50,12 +50,14 @@ a:hover.btn-primary-outline,
 }
 
 .btn {
+  position: relative;
   color: $base-white;
   border: 1px solid transparent;
   display: inline-block;
   font-family: $primary-font;
   font-weight: $btn-font-weight;
   cursor: pointer;
+  z-index: $zindex-1020;
   text-decoration: none;
   text-shadow: 0 1px 0 rgba(0,0,0,.25);
   @include transition(all .25s ease);
