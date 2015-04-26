@@ -50,7 +50,7 @@ a:hover.btn-primary-outline,
 }
 
 .btn {
-  color: $base-color-777;
+  color: $base-white;
   border: 1px solid transparent;
   display: inline-block;
   font-family: $primary-font;
@@ -59,7 +59,7 @@ a:hover.btn-primary-outline,
   text-decoration: none;
   text-shadow: 0 1px 0 rgba(0,0,0,.25);
   @include transition(all .25s ease);
-  @include button-size($base-padding-vertical, $base-padding-horizontal, $btn-font-size, $base-line-height, $border-radius);
+  @include button-size($base-padding-vertical, $base-padding-horizontal, $btn-font-size, $base-line-height, 0);
 }
 
   // Large Button
@@ -101,7 +101,7 @@ a:hover.btn-primary-outline,
 
 a.btn-default,
 a:hover.btn-default-gradient {
-  color: $base-color-777;
+  color: $base-white;
   text-decoration: none;
 }
 
@@ -113,14 +113,15 @@ a:hover.btn-default-gradient {
     // Default Button Outline //
     .btn-default-outline,
     .default-outline {
-      @include button-version($base-color-777, $btn-default-bg-outline, $btn-default-border-outline);
+      @include button-version($base-white, $btn-default-bg-outline, $btn-default-border-outline);
       text-shadow: none;
       
       &:hover {
-        border-color: $base-color-777;
-        color: $base-white;
-        background-color: $base-color-777;
+        border-color: $base-white;
+        color: $cotb-red;
+        background-color: $base-white;
         text-decoration: none;
+        @include box-shadow(0 1px 4px rgba(0, 0, 0, .28));
       }
       &:active {
         @include box-shadow(inset 0px 2px 4px 1px rgba(0,0,0,.15));

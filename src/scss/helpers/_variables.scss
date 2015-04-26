@@ -47,6 +47,16 @@ $warning-color:                         $base-warning;
 $danger-color:                          $base-danger;
 
 
+$light-sand:                            #f5f4e2;
+$medium-sand:                           #fbf2c7;
+
+$light-blue:                            #86d3c5;
+$medium-blue:                           #33ad98;
+
+$cotb-red:                              #fe5200;
+$cotb-black:                            #242422;
+
+
 
 
 // =============================================================
@@ -64,7 +74,8 @@ $accent-white:                          darken($base-bg, 2.5%);       // #f9f9f9
 $active-color:                          $primary-color;
 
 // Base text color
-$text-color:                            $base-color-333;              // #333
+//$text-color:                            $base-color-333;              // #333
+$text-color:                            $base-white;              // #333
 
 // Link color 
 $link-color:                            $primary-color;
@@ -85,7 +96,7 @@ $link-color-hover:                      darken($primary-color, 15%);
 $roboto:                                'Roboto';
 $roboto-condensed:                      'Roboto Condensed';
 
-$primary-font:                          'Sans Pro', 'Helvetica Neue', 'HelveticaNeue', 'Helvetica', 'Arial', sans-serif;
+$primary-font:                          $roboto, 'Helvetica Neue', 'HelveticaNeue', 'Helvetica', 'Arial', sans-serif;
 $secondary-font:                        serif;
 
 // Font weights
@@ -180,10 +191,12 @@ $btn-default-bg:                        $base-bg;
 $btn-default-border:                    $base-color-ccc; 
 
     // Default-outline //
-    $btn-default-color-outline:         $base-color-777;
+    //$btn-default-color-outline:         $base-color-777;
+    $btn-default-color-outline:         $base-white;
     $btn-default-bg-outline:            transparent;
-    $btn-default-border-outline:        $base-color-777;                                     
-                                        
+    //$btn-default-border-outline:        $base-color-777;
+    $btn-default-border-outline:        $base-white;
+
 // Primary                              
 $btn-primary-color:                     $base-bg;
 $btn-primary-bg:                        $primary-color;

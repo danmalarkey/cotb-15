@@ -5,13 +5,15 @@
 \*------------------------------------*/
 
 body {
-  background-color: $base-white;
+  @include rem(padding, 5px);
+  //background-color: $base-white;
+  background-color: $light-sand;
   color: $text-color;
   font-family: $primary-font;
   font-weight: $font-family-weight;
   line-height: $base-line-height;
   margin: 0;
-  padding: 0;
+  //padding: 0;
   -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
   -webkit-text-size-adjust: 100%;
   @include rem(font-size, 16px);

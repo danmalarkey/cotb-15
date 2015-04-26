@@ -1,13 +1,83 @@
-.intro-slot {
-    background-image: url("/src/img/sessions.jpg");
+.slot {
+    @include rem(padding, 5px);
+    @include rem(height, 450px);
+}
+
+        .intro-slot,
+        .speaker-slot {
+            position: relative;
+            height: 100%;
+        }
+
+
+.intro-slot,
+.speaker-slot {
+    position: relative;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-
-    height: 400px;
     @include background-size(cover);
 }
 
+.intro-slot {
+    background-image: url("/img/intro.jpg");
+}
+
+.intro-slot::after {
+    content: '';
+
+    background: rgba(231,56,39,1);
+    background: -moz-linear-gradient(left, rgba(231,56,39,1) 0%, rgba(249,213,35,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(231,56,39,1)), color-stop(100%, rgba(249,213,35,1)));
+    background: -webkit-linear-gradient(left, rgba(231,56,39,1) 0%, rgba(249,213,35,1) 100%);
+    background: -o-linear-gradient(left, rgba(231,56,39,1) 0%, rgba(249,213,35,1) 100%);
+    background: -ms-linear-gradient(left, rgba(231,56,39,1) 0%, rgba(249,213,35,1) 100%);
+    background: linear-gradient(to right, rgba(231,56,39,1) 0%, rgba(249,213,35,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e73827', endColorstr='#f9d523', GradientType=1 );
+
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: $zindex-1000;
+    opacity: .8;
+}
+
+.speaker-slot {
+    background-image: url("/img/speakers1.jpg");
+}
+
+.speaker-slot::after {
+    content: '';
+
+
+    background: -webkit-linear-gradient(90deg, #f857a6 10%, #ff5858 90%); /* Chrome 10+, Saf5.1+ */
+    background:    -moz-linear-gradient(90deg, #f857a6 10%, #ff5858 90%); /* FF3.6+ */
+    background:     -ms-linear-gradient(90deg, #f857a6 10%, #ff5858 90%); /* IE10 */
+    background:      -o-linear-gradient(90deg, #f857a6 10%, #ff5858 90%); /* Opera 11.10+ */
+    background:         linear-gradient(90deg, #f857a6 10%, #ff5858 90%); /* W3C */
+
+
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: $zindex-1000;
+    opacity: .8;
+
+    @include background-size(cover);
+}
+
+
+
 .slot-title {
+    position: relative;
+    z-index: $zindex-1010;
     padding: 3rem;
     margin-top: 0;
     color: white;
@@ -15,11 +85,34 @@
     font-family: $roboto-condensed;
 }
 
-.speaker-slot {
-    background-image: url("/src/img/sessions.jpg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-
-    height: 400px;
-    @include background-size(cover);
+.slot-body {
+    position: relative;
+    z-index: $zindex-1010;
+    padding: 3rem;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, .23);
 }
+
+
+
+
+.brand {
+    display: inline-block;
+    position: relative;
+    margin-top: 3rem;
+    z-index: $zindex-1010;
+    text-align: center;
+    @include rem(width, 200px);
+}
+
+.date {
+    display: block;
+    position: absolute;
+    position: relative;
+    z-index: $zindex-1010;
+    font-family: $roboto-condensed;
+    @include rem(font-size, 26px);
+    text-shadow: 0 2px 2px rgba(0, 0, 0, .23);
+    bottom: 40px;
+    //width: 100%;
+}
+

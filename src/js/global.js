@@ -11,7 +11,7 @@
 // Use the class .alert-hide to just
 // hide the element from the DOM
 
-$(document).ready(function(){
+$(document).ready(function() {
   // This removes the element from the DOM
   $('.close').click(function(e) {
     var elem = $(e.currentTarget).parents('.alert-gone');
