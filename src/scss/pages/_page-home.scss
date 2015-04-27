@@ -11,6 +11,7 @@
 }
 
 .intro-slot,
+.conf-info-slot,
 .about-slot,
 .speaker-slot {
     position: relative;
@@ -24,15 +25,16 @@
     background-image: url("/img/intro.jpg");
 }
 
-.about-slot {
-    background-image: url("/img/speakers1.jpg");
+.conf-info-slot {
+    background-image: url("/img/confinfo.jpg");
 }
 
 .speaker-slot {
-    background-image: url("/img/speakers1.jpg");
+    background-image: url("/img/speakers.jpg");
 }
 
 .intro-slot::after,
+.conf-info-slot::after,
 .about-slot::after,
 .speaker-slot::after {
     content: '';
@@ -58,7 +60,7 @@
     background: linear-gradient(to right, rgba(231,56,39,1) 0%, rgba(249,213,35,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e73827', endColorstr='#f9d523', GradientType=1 );
 }
-.about-slot::after {
+.conf-info-slot::after {
     background: -webkit-linear-gradient(90deg, #f857a6 10%, #ff5858 90%); /* Chrome 10+, Saf5.1+ */
     background:    -moz-linear-gradient(90deg, #f857a6 10%, #ff5858 90%); /* FF3.6+ */
     background:     -ms-linear-gradient(90deg, #f857a6 10%, #ff5858 90%); /* IE10 */
@@ -105,12 +107,18 @@
     @include rem(width, 200px);
 }
 
-.date {
+.intro-location {
     display: block;
     font-family: $roboto-condensed;
     @include rem(font-size, 26px);
     text-shadow: 0 2px 2px rgba(0, 0, 0, .23);
     bottom: 40px;
+}
+
+.date {
+    color: $base-white;
+    font-family: $roboto-condensed;
+    @include rem(font-size, 60px);
 }
 
 
@@ -131,7 +139,7 @@
     letter-spacing: .06rem;
     line-height: $base-line-height;
     font-family: $roboto-condensed;
-    font-weight: normal;
+    font-weight: 100;
     @include rem(font-size, 24px);
 }
 
